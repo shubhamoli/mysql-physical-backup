@@ -20,8 +20,11 @@ Author: Shubham Oli <oli.shubham@gmail.com>
 
 ## TODOs
 [] Write backup script for full backup
+
 [] Write backup script for incremental backup
+
 [] Optional: Save backups in S3 (for AWS users)
+
 
 ## LICENSE 
 
