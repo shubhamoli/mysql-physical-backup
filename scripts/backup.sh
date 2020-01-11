@@ -36,7 +36,7 @@ full_backup() {
                             db-backup-$CURR_DATE
     
     cd $BASE_DIR && aws s3 cp db-backup-$CURR_DATE.tar.gz \
-                           s3://tripoto/database/db-backup-$CURR_DATE.tar.gz
+                           s3://database/db-backup-$CURR_DATE.tar.gz
     log "Backup Transferred!"
 }
 
@@ -83,7 +83,7 @@ incremental_backup(){
 
     cd $BASE_DIR && aws s3 \ 
                         cp db-backup-$CURR_DATE-inc$NUMBER.tar.gz \
-                        s3://tripotostaging/database/db-backup-$CURR_DATE-inc$NUMBER.tar.gz
+                        s3://database/db-backup-$CURR_DATE-inc$NUMBER.tar.gz
     log "Backup transferred successfully!"
 }
 
